@@ -30,15 +30,17 @@ export class Game {
             width: settings.canvas.size.width
         });
 
+
         this.score = new Score(document.querySelector(settings.score.domSelector))
         this.current = {direction: Direction.right};
+
         this.apples = [];
         this.apples.push(new Apple(this.foodCanvas));
         this.apples.forEach((apple) => {
             apple.draw();
         });
-        this.gameStatus = {start: false}
 
+        this.gameStatus = {start: false}
 
         this.snake = new Snake(this.snakeCanvas, this.current, this.apples, this.foodCanvas, this.score, this.forms, this.gameStatus);
 

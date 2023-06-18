@@ -10,8 +10,8 @@ export class Apple extends Circle{
             canvas: canvas,
             color: settings.food.color,
             position: {
-                x: Random.nextInt(0, Math.floor(canvas.width/(settings.food.radius * 2))) * (settings.food.radius*2) + settings.food.radius + 1,
-                y: Random.nextInt(0, Math.floor(canvas.height/(settings.food.radius * 2))) * (settings.food.radius*2) + settings.food.radius + 1,
+                x: Random.nextInt(0, Math.floor(canvas.width/(settings.food.radius * 2))) * (settings.food.radius*2) - settings.food.radius + 1,
+                y: Random.nextInt(0, Math.floor(canvas.height/(settings.food.radius * 2))) * (settings.food.radius*2) - settings.food.radius + 1,
             },
             radius: settings.food.radius
         });

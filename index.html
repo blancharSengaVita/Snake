@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="dist/css/main.css">
+    <title>MMI - Multimédia Intéractif | examen-juin-2022</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#9f00a7">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body class="game">
+<h1 class="game__header">Snake</h1>
+<p class="game__score text">Score : <span>0</span></p>
+<div class="game__canvas-container">
+    <canvas class="canvas game__canvas-container__snake" id="snake" width="600" height="600">
+        Texte alternatif à destination des navigateurs qui ne supportent pas canvas.
+    </canvas>
+    <canvas class="canvas game__canvas-container__food" id="food" width="600" height="600">
+        Texte alternatif à destination des navigateurs qui ne supportent pas canvas.
+    </canvas>
+
+</div>
+<form action="#" method="get" class="game__play ">
+    <img src="./img/help_keyboard.svg" alt="Identification des 3 flèches de direction sur le clavier;">
+    <p class="game__play__message text">Vous pouvez déplacer le serpent avec les flèches.</p>
+    <input class="game__play__score" type="hidden" name="score" value="0">
+    <input class="btn" type="submit" value="Commencer">
+</form>
+
+<script src="dist/js/main.js"></script>
+</body>
+</html>
